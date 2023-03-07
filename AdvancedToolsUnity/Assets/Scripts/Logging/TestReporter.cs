@@ -5,22 +5,27 @@ using UnityEngine;
 public class TestReporter : MonoBehaviour
 {
     [System.Serializable]
-    private struct TestData {
-        [System.Serializable]
-        public struct FPSData {
-            public float fps;
-        }
-
-        public List<FPSData> fpsData;
+    private class TestData {
+        public List<FPSDataSet> fpsDataSets;
         public float averageFPS;
 
-        public void CalculateAverageFPS()
+        public TestData() { fpsDataSets = new List<FPSDataSet>(); }
+    }
+
+    [System.Serializable]
+    public class FPSDataSet {
+        public List<float> fpsSets;
+        public float averageFPS { get { return CalculateAverageFPS(); } }
+
+        public FPSDataSet() { fpsSets = new List<float>(); }
+
+        public float CalculateAverageFPS()
         {
             float totalFPS = 0f;
-            foreach (FPSData data in fpsData) {
-                totalFPS += data.fps;
+            foreach (float fps in fpsSets) {
+                totalFPS += fps;
             }
-            averageFPS = totalFPS / fpsData.Count;
+            return totalFPS / fpsSets.Count;
         }
     }
 
@@ -31,11 +36,10 @@ public class TestReporter : MonoBehaviour
 
     private TestData testData;
 
-    private void Start()
+    private void Awake()
     {
         //setup data
         testData = new TestData();
-        testData.fpsData = new List<TestData.FPSData>();
         //setup listeners
         fpsCounter.onReportFPS += AddFPSDataPoint;
         //run test
@@ -45,7 +49,7 @@ public class TestReporter : MonoBehaviour
     //================ handle data collection =====================
     private void AddFPSDataPoint(float fps)
     {
-        testData.fpsData.Add(new TestData.FPSData { fps = fps });
+        testData.fpsDataSets[testData.fpsDataSets.Count - 1].fpsSets.Add(fps);
     }
 
     //==================== report results ==============================
@@ -57,8 +61,6 @@ public class TestReporter : MonoBehaviour
 
     private void WriteReportFile()
     {
-        //calc avg fps
-        testData.CalculateAverageFPS();
         //create JSON
         string dataString = JsonUtility.ToJson(testData);
         //create new file
