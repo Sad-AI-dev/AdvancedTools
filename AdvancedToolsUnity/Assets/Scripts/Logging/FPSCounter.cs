@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,6 +7,8 @@ public class FPSCounter : MonoBehaviour
 {
     [SerializeField] private float timeToMeasure = 1f;
     private int frames = 0;
+
+    public Action<float> onReportFPS;
 
     private void Start()
     {
@@ -27,7 +30,9 @@ public class FPSCounter : MonoBehaviour
     private void ReportResult()
     {
         float fps = frames / timeToMeasure;
-        Debug.Log(fps + " fps these " + timeToMeasure + " seconds");
+        onReportFPS?.Invoke(fps);
+
+        //Debug.Log(fps + " fps these " + timeToMeasure + " seconds");
     }
     private void ResetCounter()
     {
