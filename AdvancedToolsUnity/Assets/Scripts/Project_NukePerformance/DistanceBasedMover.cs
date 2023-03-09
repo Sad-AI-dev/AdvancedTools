@@ -7,8 +7,6 @@ using UnityEngine;
 /// </summary>
 public class DistanceBasedMover : MonoBehaviour
 {
-    [SerializeField] private Transform objectHolder;
-
     [Header("Individual Settings")]
     [SerializeField] private float moveSpeed = 1f;
     [SerializeField] private Vector3 maxOffset;
@@ -22,7 +20,7 @@ public class DistanceBasedMover : MonoBehaviour
     private void MoveTowardsNearestObject()
     {
         List<Transform> others = new List<Transform>();
-        foreach (Transform child in objectHolder) {
+        foreach (Transform child in transform.parent) {
             if (Vector3.Distance(child.position, transform.position) > 1f) {
                 others.Add(child);
             }

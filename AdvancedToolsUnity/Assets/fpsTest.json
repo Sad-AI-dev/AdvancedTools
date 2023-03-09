@@ -1,1 +1,72 @@
-{"fpsData":[{"fps":14.0},{"fps":19.0},{"fps":20.0},{"fps":19.0},{"fps":20.0},{"fps":20.0},{"fps":20.0},{"fps":20.0},{"fps":20.0}],"averageFPS":19.11111068725586}
+{
+    "fpsDataSets": [
+        {
+            "fpsSets": [],
+            "averageFPS": 0.0,
+            "objectCount": 10
+        },
+        {
+            "fpsSets": [
+                96.0
+            ],
+            "averageFPS": 96.0,
+            "objectCount": 25
+        },
+        {
+            "fpsSets": [
+                166.0
+            ],
+            "averageFPS": 166.0,
+            "objectCount": 40
+        },
+        {
+            "fpsSets": [
+                180.0
+            ],
+            "averageFPS": 180.0,
+            "objectCount": 55
+        },
+        {
+            "fpsSets": [
+                166.0
+            ],
+            "averageFPS": 166.0,
+            "objectCount": 70
+        },
+        {
+            "fpsSets": [
+                162.0
+            ],
+            "averageFPS": 162.0,
+            "objectCount": 85
+        },
+        {
+            "fpsSets": [
+                143.0
+            ],
+            "averageFPS": 143.0,
+            "objectCount": 100
+        },
+        {
+            "fpsSets": [
+                135.0
+            ],
+            "averageFPS": 135.0,
+            "objectCount": 115
+        },
+        {
+            "fpsSets": [
+                131.0
+            ],
+            "averageFPS": 131.0,
+            "objectCount": 130
+        },
+        {
+            "fpsSets": [
+                127.0
+            ],
+            "averageFPS": 127.0,
+            "objectCount": 145
+        }
+    ]
+}
