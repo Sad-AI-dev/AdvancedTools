@@ -93,5 +93,7 @@ public class TestReporter : MonoBehaviour
         string dataString = JsonUtility.ToJson(testData, true);
         //create new file
         System.IO.File.WriteAllText(Application.dataPath + "/" + fileName + ".json", dataString);
+        //finish test!
+        Application.Quit();
     }
 }

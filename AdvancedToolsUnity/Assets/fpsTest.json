@@ -7,66 +7,66 @@
         },
         {
             "fpsSets": [
-                96.0
+                87.0
             ],
-            "averageFPS": 96.0,
-            "objectCount": 25
+            "averageFPS": 87.0,
+            "objectCount": 20
         },
         {
             "fpsSets": [
-                166.0
+                157.0
             ],
-            "averageFPS": 166.0,
+            "averageFPS": 157.0,
+            "objectCount": 30
+        },
+        {
+            "fpsSets": [
+                170.0
+            ],
+            "averageFPS": 170.0,
             "objectCount": 40
         },
         {
             "fpsSets": [
-                180.0
+                165.0
             ],
-            "averageFPS": 180.0,
-            "objectCount": 55
+            "averageFPS": 165.0,
+            "objectCount": 50
         },
         {
             "fpsSets": [
                 166.0
             ],
             "averageFPS": 166.0,
+            "objectCount": 60
+        },
+        {
+            "fpsSets": [
+                160.0
+            ],
+            "averageFPS": 160.0,
             "objectCount": 70
         },
         {
             "fpsSets": [
-                162.0
+                149.0
             ],
-            "averageFPS": 162.0,
-            "objectCount": 85
+            "averageFPS": 149.0,
+            "objectCount": 80
         },
         {
             "fpsSets": [
-                143.0
+                140.0
             ],
-            "averageFPS": 143.0,
+            "averageFPS": 140.0,
+            "objectCount": 90
+        },
+        {
+            "fpsSets": [
+                144.0
+            ],
+            "averageFPS": 144.0,
             "objectCount": 100
-        },
-        {
-            "fpsSets": [
-                135.0
-            ],
-            "averageFPS": 135.0,
-            "objectCount": 115
-        },
-        {
-            "fpsSets": [
-                131.0
-            ],
-            "averageFPS": 131.0,
-            "objectCount": 130
-        },
-        {
-            "fpsSets": [
-                127.0
-            ],
-            "averageFPS": 127.0,
-            "objectCount": 145
         }
     ]
 }
