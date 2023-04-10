@@ -52,7 +52,7 @@ void AMoverCube::MoveRandomOffset(float DeltaTime) {
 		FMath::RandRange(-randOffsetBounds.X, randOffsetBounds.X),
 		FMath::RandRange(-randOffsetBounds.Y, randOffsetBounds.Y),
 		FMath::RandRange(-randOffsetBounds.Z, randOffsetBounds.Z)
-		));
+	));
 }
 
 //============ sort helper func =============
