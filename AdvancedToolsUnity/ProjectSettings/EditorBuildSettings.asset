@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/PerformanceTest.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 0
+    path: Assets/Scenes/SimplePerformanceTest.unity
+    guid: 09d26eda7b29aa74eba7f1d5987a7a15
   m_configObjects: {}
