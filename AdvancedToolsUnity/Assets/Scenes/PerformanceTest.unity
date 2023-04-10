@@ -226,7 +226,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 929579263}
-  - component: {fileID: 929579262}
+  - component: {fileID: 929579265}
   - component: {fileID: 929579264}
   m_Layer: 0
   m_Name: Tester
@@ -235,19 +235,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &929579262
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 929579261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 48449ebcdc65fdb40843a7530ac83f5b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeToMeasure: 1
 --- !u!4 &929579263
 Transform:
   m_ObjectHideFlags: 0
@@ -275,11 +262,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf54cd59d3e9f474186bec5d49c07bdb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stepTime: 1
-  totalTestTime: 10
   fileName: fpsTest
-  fpsCounter: {fileID: 929579262}
+  stepTime: 10
+  totalSteps: 10
+  fpsCounter: {fileID: 929579265}
   spawner: {fileID: 1197942164}
+--- !u!114 &929579265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929579261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48449ebcdc65fdb40843a7530ac83f5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +408,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 5569289925505485428, guid: 46940ec8ec9db7c479f0e0df71a11158, type: 3}
-  startCount: 10
   incrementCount: 10
   offset: {x: 5, y: 5, z: 5}
   totalCount: 0

@@ -3,22 +3,14 @@ using UnityEngine;
 public class ObjectSpawner : MonoBehaviour
 {
     [SerializeField] private GameObject prefab;
-    [SerializeField] private int startCount;
     [SerializeField] private int incrementCount;
     [SerializeField] private Vector3 offset;
 
     //vars
     [HideInInspector] public int totalCount;
 
-    private void Awake()
-    {
-        for (int i = 0; i < startCount; i++) {
-            CreateNextObject();
-        }
-    }
-
     //called by test reporter, creates the next 'step' context for the test
-    public void NextStep()
+    public void SpawnNextStep()
     {
         for (int i = 0; i < incrementCount; i++) {
             CreateNextObject();

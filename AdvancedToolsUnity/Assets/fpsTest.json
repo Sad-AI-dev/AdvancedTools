@@ -1,72 +1,14 @@
 {
-    "fpsDataSets": [
-        {
-            "fpsSets": [],
-            "averageFPS": 0.0,
-            "objectCount": 10
-        },
-        {
-            "fpsSets": [
-                87.0
-            ],
-            "averageFPS": 87.0,
-            "objectCount": 20
-        },
-        {
-            "fpsSets": [
-                157.0
-            ],
-            "averageFPS": 157.0,
-            "objectCount": 30
-        },
-        {
-            "fpsSets": [
-                170.0
-            ],
-            "averageFPS": 170.0,
-            "objectCount": 40
-        },
-        {
-            "fpsSets": [
-                165.0
-            ],
-            "averageFPS": 165.0,
-            "objectCount": 50
-        },
-        {
-            "fpsSets": [
-                166.0
-            ],
-            "averageFPS": 166.0,
-            "objectCount": 60
-        },
-        {
-            "fpsSets": [
-                160.0
-            ],
-            "averageFPS": 160.0,
-            "objectCount": 70
-        },
-        {
-            "fpsSets": [
-                149.0
-            ],
-            "averageFPS": 149.0,
-            "objectCount": 80
-        },
-        {
-            "fpsSets": [
-                140.0
-            ],
-            "averageFPS": 140.0,
-            "objectCount": 90
-        },
-        {
-            "fpsSets": [
-                144.0
-            ],
-            "averageFPS": 144.0,
-            "objectCount": 100
-        }
+    "list": [
+        188.10000610351563,
+        141.8000030517578,
+        115.5999984741211,
+        89.0,
+        50.29999923706055,
+        42.099998474121097,
+        32.70000076293945,
+        24.899999618530275,
+        20.899999618530275,
+        17.100000381469728
     ]
 }
