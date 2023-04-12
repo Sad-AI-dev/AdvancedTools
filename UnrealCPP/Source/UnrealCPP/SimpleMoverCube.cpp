@@ -32,7 +32,7 @@ void ASimpleMoverCube::MoveToNearestNeighbour(float DeltaTime) {
 		UGameplayStatics::GetAllActorsOfClass(world, ASimpleMoverCube::StaticClass(), movers);
 		//remove close movers
 		for (int i = movers.Num() - 1; i >= 0; i--) {
-			if ((GetActorLocation() - movers[i]->GetActorLocation()).Length() < 10.0f) {
+			if ((GetActorLocation() - movers[i]->GetActorLocation()).Length() < 100.0f) {
 				movers.RemoveAt(i);
 			}
 		}
